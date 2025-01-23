@@ -22,10 +22,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-          cache: 'npm'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install dependencies and create lock file
+        run: |
+          npm install
+          npm shrinkwrap
 
       - name: Build
         run: npm run build
