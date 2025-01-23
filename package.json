@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://apdavydenkov.github.io/CodenamesGames",
+  "homepage": "https://code-names.ru",
   "main": "src/index.tsx",
   "dependencies": {
     "react": "^19.0.0",
