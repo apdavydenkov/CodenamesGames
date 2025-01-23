@@ -4,7 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
-  "homepage": "https://predurok.ru",
+  "homepage": "https://apdavydenkov.github.io/CodenamesGames",
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
