@@ -40,7 +40,7 @@ const App = () => {
 
   const loadDictionary = async (filename, index) => {
     try {
-      const response = await fetch(`/dic/${filename}`);
+      const response = await fetch(`/CodenamesGames/dic/${filename}`);
       const text = await response.text();
 
       const titleMatch = text.match(/#TITLE=(.*?)#/);
