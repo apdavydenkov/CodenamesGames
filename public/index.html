@@ -4,34 +4,130 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
     />
-    <meta name="theme-color" content="#000000" />
+
+    <!-- SEO Meta Tags -->
+    <title>Codenames Game - Онлайн игра для компании | Кодовые имена</title>
+    <meta
+      name="description"
+      content="Играйте в Codenames (Кодовые имена) онлайн бесплатно с друзьями. Популярная настольная игра теперь доступна в браузере. Станьте капитаном команды или агентом!"
+    />
+    <meta
+      name="keywords"
+      content="codenames, кодовые имена, кодовые имена онлайн, кодовые имена в браузере, настольная игра онлайн, игра для компании, codenames online"
+    />
+    <meta name="author" content="Code Names" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://code-names.ru/" />
+    <meta property="og:title" content="Codenames Game - Играть онлайн" />
+    <meta
+      property="og:description"
+      content="Играйте в Codenames (Кодовые имена) онлайн бесплатно с друзьями. Популярная настольная игра в браузере."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://code-names.ru/" />
+    <meta property="twitter:title" content="Codenames Game - Играть онлайн" />
+    <meta
+      property="twitter:description"
+      content="Играйте в Codenames (Кодовые имена) онлайн бесплатно с друзьями. Популярная настольная игра в браузере."
+    />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
+
+    <!-- Theme Color for Browsers -->
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2563eb" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="%PUBLIC_URL%/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="%PUBLIC_URL%/favicon-16x16.png"
+    />
+
+    <!-- Web App Manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Codenames Game</title>
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Additional Meta -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Codenames" />
+
     <style>
       body {
         margin: 0;
         padding: 0;
-        font-family: "Inter", sans-serif !important;
+        font-family: "Inter", system-ui, -apple-system, sans-serif !important;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
       }
 
       * {
         box-sizing: border-box;
       }
+
+      /* Optimize font loading */
+      @font-face {
+        font-family: "Inter";
+        font-display: swap;
+      }
     </style>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://code-names.ru/" />
   </head>
   <body>
-    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <noscript>
+      <div style="padding: 20px; text-align: center">
+        Для работы приложения Codenames необходимо включить JavaScript в вашем
+        браузере.
+      </div>
+    </noscript>
     <div id="root"></div>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebApplication",
+        "name": "Codenames Game",
+        "description": "Онлайн версия популярной настольной игры Codenames (Кодовые имена)",
+        "url": "https://code-names.ru",
+        "applicationCategory": "Game",
+        "operatingSystem": "Web Browser",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "RUB"
+        }
+      }
+    </script>
   </body>
 </html>
