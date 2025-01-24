@@ -13,7 +13,7 @@ class GameSocket {
     this.offlineRevealed = new Set();
   }
 
-  connect(serverUrl = "https://p6dxkv-8080.csb.app") {
+  connect(serverUrl = "https://codenamesserver.onrender.com/") {
     this.socket = io(serverUrl, {
       transports: ["websocket"],
       autoConnect: true,
