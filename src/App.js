@@ -147,7 +147,7 @@ const App = () => {
               winner: null,
             });
 
-            gameSocket.joinGame(keyFromUrl);
+            gameSocket.joinGame(keyFromUrl, gameData.words, gameData.colors);
             return;
           }
         }
